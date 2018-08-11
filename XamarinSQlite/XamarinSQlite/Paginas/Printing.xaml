@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSQlite.Paginas.Printing"
+             >
+
+    <ScrollView>
+        <StackLayout  BackgroundColor="#E3F2FD">
+            <Label Text="Printing" Font="25" TextColor="#E3F2FD" HorizontalOptions="Center"></Label>
+            <Picker x:Name="txtmaterial" Title="Material"  SelectedItem="{Binding Material , Mode=TwoWay}"></Picker>
+            <Entry x:Name="txtgauge" Placeholder="Gauge" Text="{Binding Gauge, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtsize" Placeholder="Size" Text="{Binding Size, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtnorolls" Placeholder="No-Rolls" Text="{Binding NoRolls, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtwgtroll" Placeholder="Wgt-Roll" Text="{Binding WgtRoll, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txttotalweight" Placeholder="Total Weight" Text="{Binding TotalWeight, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtprinting" Placeholder="Printing" Text="{Binding Printing, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtscrap" Placeholder="Scrap" Text="{Binding Scrap, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Entry x:Name="txtfinished" Placeholder="Finished Printing" Text="{Binding Finished, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+            <Button x:Name="btnguardar" Text="Save" BackgroundColor="#2196F3" TextColor="#ffffff" Command="{Binding Guardar}"></Button>
+            <Button x:Name="btnnuevo" Text="Clear" BackgroundColor="#2196F3" TextColor="#ffffff" Command="{Binding Nuevo}"></Button>
+            <Button x:Name="btnver" Text="Get List" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+        </StackLayout>
+
+
+    </ScrollView>
+
+
+</ContentPage>

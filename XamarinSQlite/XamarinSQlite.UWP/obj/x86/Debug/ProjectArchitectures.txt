@@ -1,0 +1,2 @@
+C:\Users\Leonar\Documents\Visual Studio 2017\Projects\XamarinSQlite\XamarinSQlite\XamarinSQlite.UWP\XamarinSQlite.UWP.csproj;x86
+C:\Users\Leonar\Documents\Visual Studio 2017\Projects\XamarinSQlite\XamarinSQlite\XamarinSQlite\XamarinSQlite.csproj;neutral

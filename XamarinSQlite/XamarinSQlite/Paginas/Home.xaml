@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSQlite.Paginas.Home" Title="Welcome InvePlas">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#E3F2FD">
+            <Grid  BackgroundColor="#E3F2FD" Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="0"  Source="logo.png" WidthRequest="100"/>
+                <Label Text="Materials Inventory" Grid.Row="0" Grid.Column="1"
+                       VerticalOptions="Center"
+                       Font="14" TextColor="#000000" HorizontalOptions="Center"></Label>
+                <Button x:Name="btnprinting" Grid.Column="0" Grid.Row="1" Text="Printing" 
+                        BackgroundColor="#FFB900" TextColor="#ffffff"></Button>
+                
+                <Button Grid.Row="1" Grid.Column="1" x:Name="btnslitting" Text="Slitting" 
+                        BackgroundColor="#E81123" TextColor="#ffffff"></Button>
+                
+                <Button x:Name="btnlamination" Grid.Column="0" Grid.Row="2" Text="Lamination" 
+                        BackgroundColor="#00B7C3" TextColor="#ffffff"></Button>
+                
+                <Button Grid.Row="2" Grid.Column="1" x:Name="btnconversion" Text="Conversion" 
+                        BackgroundColor="#FF8C00" TextColor="#ffffff"></Button>
+                
+                <Button x:Name="btnshrink" Grid.Column="0" Grid.Row="3" Text="Shrink" 
+                        BackgroundColor="#00CC6A" TextColor="#ffffff"></Button>
+                
+                <Button Grid.Row="3" Grid.Column="1" x:Name="btnpoly" Text="Poly" 
+                        BackgroundColor="#1073D6" TextColor="#ffffff"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

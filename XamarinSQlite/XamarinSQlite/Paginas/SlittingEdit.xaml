@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSQlite.Paginas.SlittingEdit">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  BackgroundColor="#E3F2FD">
+                <Label Text="Shrink Edit" Font="25" TextColor="#E3F2FD" HorizontalOptions="Center"></Label>
+                <Picker x:Name="txtmaterial" Title="Material"  SelectedItem="{Binding Material, Mode=TwoWay}"></Picker>
+                <Entry x:Name="txtsize" Placeholder="Size" 
+                   Text="{Binding Size, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtnorolls" Placeholder="No-Rolls" 
+                   Text="{Binding NoRolls, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtwgtroll" Placeholder="Wgt-Roll" 
+                   Text="{Binding WgtRoll, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txttotalweight" Placeholder="Total-Weight" 
+                   Text="{Binding TotalWeight, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtslitting" Placeholder="Slitting" 
+                   Text="{Binding Slitting, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtscrap" Placeholder="Scrap" 
+                   Text="{Binding Scrap, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtfinished1" Placeholder="Finished Slitting" 
+                   Text="{Binding Finished1, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtfinished2" Placeholder="Finished Slitting" 
+                   Text="{Binding Finished2, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtfinished3" Placeholder="Finished Slitting" 
+                   Text="{Binding Finished3, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry x:Name="txtprint" Placeholder="Print"
+                   Text="{Binding Print, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Button x:Name="btnmodificar" Text="Update" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+                <Button x:Name="btneliminar" Text="Delete" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+                <Button x:Name="btnver" Text="Get List" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

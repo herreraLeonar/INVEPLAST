@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSQlite.Paginas.Lamination">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid  BackgroundColor="#E3F2FD">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                       Text="Inventory Lamination - Create" Font="18" TextColor="#2196F3" HorizontalOptions="Center"/>
+                    
+                    <Picker Grid.Row="1" Grid.Column="0" x:Name="txtmaterial1" Title="Material 1"  
+                            SelectedItem="{Binding Material1 , Mode=TwoWay}"></Picker>
+                    <Picker Grid.Row="1" Grid.Column="1" x:Name="txtmaterial2" Title="Material 2"  
+                            SelectedItem="{Binding Material2 , Mode=TwoWay}"></Picker>
+                    <Entry Grid.Row="2" Grid.Column="0" x:Name="txtGauge1" Placeholder="Gauge 1" 
+                           Text="{Binding Gauge1, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="2" x:Name="txtGauge2" Grid.Column="1" Placeholder="Gauge 2" 
+                           Text="{Binding Gauge2, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="3" x:Name="txtsize1" Grid.Column="0" Placeholder="Size 1" 
+                           Text="{Binding Size1, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="3" x:Name="txtsize2" Grid.Column="1" Placeholder="Size 2" 
+                           Text="{Binding Size2, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="4" x:Name="txtreturned1" Grid.Column="0" Placeholder="Returned From Lamination 1" 
+                           Text="{Binding Returned1, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="4" x:Name="txtreturned2" Grid.Column="1" Placeholder="Returned From Lamination 2" 
+                           Text="{Binding Returned2, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="5" x:Name="txtscrap" Grid.Column="0" Placeholder="Scrap" 
+                           Text="{Binding Scrap, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="5" x:Name="txtlamination1" Grid.Column="1" Placeholder="Finished Lamination" 
+                       Text="{Binding FinishedLamination, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    <Entry Grid.Row="6" x:Name="txtfinished" Grid.Column="0" Placeholder="Finished" 
+                       Text="{Binding Finished, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                    
+                    <Button Grid.Row="7" x:Name="btnGuardar" Grid.Column="0" Grid.ColumnSpan="2"  Text="Save" BackgroundColor="#2196F3" TextColor="#ffffff"  Command="{Binding Guardar}"></Button>
+                    <Button Grid.Row="8" x:Name="btnver" Grid.Column="0" Grid.ColumnSpan="2" Text="Get List" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

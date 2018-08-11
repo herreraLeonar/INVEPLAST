@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="XamarinSQlite.Paginas.ListadoPrinting">
+    <ScrollView>
+        <StackLayout BackgroundColor="#E3F2FD">
+
+            <Label Text="Printing List" HorizontalOptions="Center" TextColor="#2196F3"></Label>
+
+            <Button x:Name="btnhome" Text="Create Printing" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+           
+            <ListView x:Name="lista" ItemsSource="{Binding ListadoPrinting1}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="lbMaterial" Text="{Binding Material}"></Label>
+                                <Label x:Name="lbSize" Text="{Binding size}"></Label>
+                                <Label x:Name="lbNoRolls" Text="{Binding noRolls}"></Label>
+                                <Label x:Name="lbWgtRoll" Text="{Binding wgtRoll}" ></Label>
+                                <Label x:Name="lbPrinting" Text="{Binding printing}" ></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

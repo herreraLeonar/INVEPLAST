@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSQlite.Paginas.Impresion">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid  BackgroundColor="#E3F2FD">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                       Text="Inventory Printing - Create" Font="25" TextColor="#2196F3" HorizontalOptions="Center"/>
+                <Picker Grid.Row="1" Grid.Column="0" x:Name="txtnombre" Title="Name"  SelectedItem="{Binding Nombre , Mode=TwoWay}"></Picker>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtgauge" Placeholder="Gauge" Text="{Binding Gauge, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="2" x:Name="txtSize" Grid.Column="0" Placeholder="Size" Text="{Binding Size, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="2" x:Name="txtnoroll" Grid.Column="1" Placeholder="No-Rolls" Text="{Binding NoRolls, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="3" x:Name="txtwgtroll" Grid.Column="0" Placeholder="Wgt Roll" Text="{Binding WgtRoll, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="3" x:Name="txttotalweight" Grid.Column="1" Placeholder="Total Weight" Text="{Binding ToWeight, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="4" x:Name="txtprinting" Grid.Column="0" Placeholder="Printing" Text="{Binding Printing, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="4" x:Name="txtscrap" Grid.Column="1" Placeholder="Scrap" Text="{Binding Scrap, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="5" x:Name="txtfiprinting" Grid.Column="0" Placeholder="Finished Printing" Text="{Binding FiPrinting, Mode=TwoWay}" Keyboard="Numeric"></Entry>
+                <Button Grid.Row="6" x:Name="btnmodificar" Grid.Column="0" Grid.ColumnSpan="2"  Text="Save" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+                <Button Grid.Row="7" x:Name="btnver" Grid.Column="0" Grid.ColumnSpan="2" Text="Get List" BackgroundColor="#2196F3" TextColor="#ffffff"></Button>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
